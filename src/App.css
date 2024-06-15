@@ -1,0 +1,174 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.Game-Holder{
+  width: 100%;
+  height: 100vh;
+  max-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  align-items: center;
+  justify-content: center;
+  font-family: poppins;
+  padding: 2rem;
+}
+.Words-Holder{
+  width: 50%;
+  max-width: 50%;
+  height: auto;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.Letter-Holder{
+  width: 150px;
+  height: 150px;
+  font-size: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #202938;
+  border-radius: 10px;
+  font-weight: 300;
+}
+
+.KeyBoard-Holder{
+  width: 60%;
+  max-width: 60%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.Keys{
+  width: 80px;
+  height: 80px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  background-color: #202938;
+  cursor: pointer;
+  transition: 350ms;
+}
+
+.Keys:hover{
+  background-color: #303d54;
+  transition: 350ms;
+}
+.Keys:active {
+  background-color: green;
+}
+.Bad{
+  width: 80px;
+  height: 80px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  background-color: #202938;
+  cursor: pointer;
+  transition: 350ms;
+}
+
+.Bad:hover{
+  background-color: #303d54;
+  transition: 350ms;
+}
+.Bad:active {
+  background-color: red;
+}
+
+.Welcome-screen{
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.Welcome-screen h1{
+  font-size: 40px;
+}
+.Welcome-screen ul{
+  list-style: none;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  font-size: 20px;
+}
+.Welcome-screen li{
+  width: 100px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  transition: 350ms;
+}
+.Welcome-screen li:hover{
+  cursor: pointer;
+  background-color: #202938;
+  border: solid white 1px;
+  transition: 350ms;
+}
+
+.Welcome-screen li:active {
+  background-color: red;
+}
+
+.Lives-Holder{
+  width: 40%;
+  height: auto;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+.Lives{
+  width: 50px;
+  height: 50px;
+  color: #303d54;
+  font-size: 30px;
+  animation: pop 2s ease-in-out 1;
+  animation-fill-mode: forwards;
+}
+
+.try-again {
+  width: 100px;
+  height: 50px;
+  border: 1px solid white;
+  background-color: #202938;
+  color: white;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 350ms;
+}
+.try-again:hover{
+  background-color: #303d54;
+  transition: all 350ms;
+}
+
+@keyframes pop {
+  from {
+    transform: translateX(-100%);
+    color: #303d54;
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    color: rgb(163, 4, 4);
+    opacity: 1;
+  }
+}
